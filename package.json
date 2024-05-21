@@ -21,10 +21,6 @@
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git remote add origin https://github.com/dewang002/hackathon-font-end.git"
-  },
   "keywords": [
     "babu"
   ],
