@@ -3,13 +3,13 @@ import Home from "./src/components/Home";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import React from "react";
 import Nav from "./src/components/Nav";
-// import About from "./src/components/utils/About";
-// import Vision from "./src/components/utils/Vision"
+import About from "./src/components/About";
+import Vision from "./src/components/Vision"
 
 const App =()=>{
   
   return (
-    <div className="bg-black mx-auto text-white h-[100vh] w-full overflow-x-hidden">
+    <div className="bg-black mx-auto text-white  w-full overflow-x-hidden">
       <Nav />
       <Outlet />
     </div>
@@ -26,14 +26,14 @@ const Routing = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-      // {
-      //   path: "/about",
-      //   element: <About />,
-      // },
-      // {
-      //   path: "/vision",
-      //   element: <Vision />,
-      // },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/vision",
+        element: <Vision />,
+      },
     ],
   },
 ]);

@@ -4,7 +4,7 @@ import img1 from "../../../public/001-options.svg";
 import img2 from "../../../public/002-chat.svg";
 function Content() {
   return (
-    <div className="h-[100vh] w-full">
+    <div className="h-full w-full">
       <div className="w-full h-32 flex justify-end items-center gap-2 flex-col mb-[10vw]">
         <h1 className="text-white text-4xl font-bold ">Our Offerings</h1>
         <div>
