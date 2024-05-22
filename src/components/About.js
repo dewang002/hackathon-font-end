@@ -9,13 +9,13 @@ function About() {
   return (
     <>
       <Link
-        onClick={() => navigate('/')}
+        onClick={() => navigate("/")}
         to=""
-        className="h-10 w-10 ml-[10vw] absolute ri-arrow-left-line hover:text-purple-400 text-xl duration-300"
+        className="h-10 w-10 ml-[10vw] mt-[6vw] absolute ri-arrow-left-line hover:text-purple-400 text-xl duration-300"
       >
         <FaArrowLeft />
       </Link>
-      <div className="about h-[90.4vh] w-[72vw] mx-auto  flex flex-col items-center">
+      <div className="about h-[100vh] w-[72vw] mx-auto  flex flex-col items-center">
         <div className="w-full  flex justify-end items-center gap-2 flex-col mb-[2vw]">
           <h1 className="text-white text-4xl font-bold ">About Us</h1>
           <div>

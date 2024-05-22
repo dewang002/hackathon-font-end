@@ -4,17 +4,20 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import React from "react";
 import Nav from "./src/components/Nav";
 import About from "./src/components/About";
-import Vision from "./src/components/Vision"
+import Vision from "./src/components/Vision";
+import Offering from "./src/components/Offering";
+import { ContainerWithChildren } from "postcss/lib/container";
+import Contact from "./src/components/Contact";
+import LocomotiveScroll from "locomotive-scroll";
 
-const App =()=>{
-  
+const App = () => {
   return (
     <div className="bg-black mx-auto text-white  w-full overflow-x-hidden">
       <Nav />
       <Outlet />
     </div>
   );
-}
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const Routing = createBrowserRouter([
@@ -33,6 +36,14 @@ const Routing = createBrowserRouter([
       {
         path: "/vision",
         element: <Vision />,
+      },
+      {
+        path: "/offering",
+        element: <Offering />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },
