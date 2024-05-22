@@ -7,7 +7,7 @@ import About from "./src/components/About";
 import Vision from "./src/components/Vision";
 import Offering from "./src/components/Offering";
 import Contact from "./src/components/Contact";
-
+import baseRelativePath from './path.js';
 
 const App = () => {
   return (
@@ -21,31 +21,31 @@ const App = () => {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const Routing = createBrowserRouter([
   {
-    path: "/",
+    path: `${baseRelativePath}/`,
     element: <App />,
     children: [
       {
-        path: "/",
+        path:`${baseRelativePath}/`,
         element: <Home />,
       },
       {
-        path: "/about",
+        path: `${baseRelativePath}/about`,
         element: <About />,
       },
       {
-        path: "/vision",
+        path: `${baseRelativePath}/vision`,
         element: <Vision />,
       },
       {
-        path: "/offering",
+        path: `${baseRelativePath}/offering`,
         element: <Offering />,
       },
       {
-        path: "/contact",
+        path: `${baseRelativePath}/contact`,
         element: <Contact />,
       },
     ],
   },
 ]);
 
-root.render(<RouterProvider router={Routing} />);
+root.render(<RouterProvider basename={process.env.PUBLIC_URL} router={Routing} />);
