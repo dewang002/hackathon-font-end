@@ -884,12 +884,12 @@ img, video {
   transition-delay: 75ms;
 }
 
-.duration-300 {
-  transition-duration: .3s;
-}
-
 .duration-100 {
   transition-duration: .1s;
+}
+
+.duration-300 {
+  transition-duration: .3s;
 }
 
 .ease-in-out {

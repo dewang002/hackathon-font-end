@@ -1,15 +1,18 @@
-{
+{"homepage": "https://dewnag002.github.io/hackathon-font-end/",
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "config": "^3.3.11",
     "framer-motion": "^11.2.4",
+    "gsap": "^3.12.5",
     "locomotive-scroll": "^5.0.0-beta.12",
     "parcel": "^2.12.0",
     "react": "^18.3.1",
+    "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
     "process": "^0.11.10",
     "tailwindcss": "^3.4.3"
@@ -17,8 +20,10 @@
   "name": "hakathon",
   "version": "1.0.0",
   "description": "fix issues",
-  "main": "App.js",
+ 
   "scripts": {
+    "predeploy":"npm run bild",
+    "deploy":"gh-pages -d dist",
     "test": "jest",
     "start": "parcel index.html",
     "build": "parcel build index.html"

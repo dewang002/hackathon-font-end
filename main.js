@@ -6,9 +6,8 @@ import Nav from "./src/components/Nav";
 import About from "./src/components/About";
 import Vision from "./src/components/Vision";
 import Offering from "./src/components/Offering";
-import { ContainerWithChildren } from "postcss/lib/container";
 import Contact from "./src/components/Contact";
-import LocomotiveScroll from "locomotive-scroll";
+
 
 const App = () => {
   return (
